@@ -17,7 +17,7 @@ var losses = 1;
 
 function getCompNumber() {
 	compRandy = Math.floor(Math.random() * 120)+ 19;
-	console.log("Computer Value: " + compRandy);
+	// console.log("Computer Value: " + compRandy);
 	};
 
 
@@ -25,7 +25,7 @@ function reset() {
 	getCompNumber();
 	for (var i = 0; i < 4; i++) {
 	gemArray[i] = Math.floor(Math.random() * 12) + 1;
-	console.log("GemArray Value " + [i] + ": " + gemArray[i]);
+	// console.log("GemArray Value " + [i] + ": " + gemArray[i]);
 	}
 	$("#targetNumber").text(compRandy);
 	$("#userGuess").text("your guess");
@@ -38,10 +38,6 @@ function reset() {
 //MAIN PROCESS
 // ======================================================= 
 reset();
-
-
-
-
 
 
 $("#gem0").on("click", function() {
