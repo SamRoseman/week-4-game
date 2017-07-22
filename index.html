@@ -7,15 +7,73 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 <body>
-test 
-<h1> test </h1>
-<h2> ttest </h2>
 
+<div class="container">
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Instructions</h3>
+			</div>
+			<div class="panel-body">
+				<p> Match the number that the computer gives you!</p>
+				<p> Click on the crystals to add to your guess, each crystal has a different value. </p>
+				<p> If you match the value, you WIN, if you go over, you lose the game. </p>
+			</div>
+		</div>
+	</div>		
 
+	<div class="row">
+		<div class="panel panel-default col-xs-6">
+			<div id="targetNumber"> computer target </div>
+		</div>
+				<div class="panel panel-default col-xs-6">
+			<div id="userGuess"> Your Guess </div>
+		</div>
+	</div>	
 
+	<div class="row">
+		<div class="panel panel-default col-xs-6">
+			<div id="wins"> Wins: 0 </div>
+		</div>
+		<div class="panel panel-default col-xs-6">
+			<div id="losses"> Losses: 0  </div>
+		</div>
+	</div>
 
+	<div class="row">
+			<div class="panel panel-default col-xs-3">
+				<img id="gem0" src="assets/images/Emerald.png" alt="Emerald">
+			</div>
+			<div class="panel panel-default col-xs-3">
+				<img id="gem1" src="assets/images/Gem.png" alt="Gem">
+			</div>
+			<div class="panel panel-default col-xs-3">
+				<img id="gem2" src="assets/images/Topaz.png" alt="Topaz">
+			</div>
+			<div class="panel panel-default col-xs-3">
+				<img id="gem3" src="assets/images/Zircon.png" alt="Zircon">
+			</div>
+	</div>	
+		
+					
+	
+<!-- close container -->
+</div>
 	<script type="text/javascript"  src="assets/javascript/game.js"></script>
 </body>
 </html>
+					<!-- When the player clicks on a crystal, it will add a specific amount of points to the player's total score. Your game will hide this amount until the player clicks a crystal.
+					When they do click one, update the player's score counter.
+					The player wins if their total score matches the random number from the beginning of the game.
+
+					The player loses if their score goes above the random number.
+
+					The game restarts whenever the player wins or loses.
+
+					When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+					The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+					 -->
