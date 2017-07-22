@@ -46,7 +46,7 @@ reset();
 
 $("#gem0").on("click", function() {
 	gem0 = gem0 + gemArray[0];
-	console.log(gem0);
+	// console.log(gem0);
 	$("#userGuess").text(gem0 + gem1 + gem2 + gem3);
 	if (compRandy < gem0+gem1+gem2+gem3) {
 	alert("You lost");
@@ -63,7 +63,7 @@ $("#gem0").on("click", function() {
 
 $("#gem1").on("click", function() {
 	gem1 = gem1 + gemArray[1];
-	console.log(gem1);
+	// console.log(gem1);
 	$("#userGuess").text(gem0 + gem1 + gem2 + gem3);
 	if (compRandy < gem0+gem1+gem2+gem3) {
 	alert("You lost");	
@@ -79,7 +79,7 @@ $("#gem1").on("click", function() {
 
 $("#gem2").on("click", function() {
 	gem2 = gem2 + gemArray[2];
-	console.log(gem2);
+	// console.log(gem2);
 	$("#userGuess").text(gem0 + gem1 + gem2 + gem3);
 	if (compRandy < gem0+gem1+gem2+gem3) {
 	alert("You lost");
@@ -95,7 +95,7 @@ $("#gem2").on("click", function() {
 
 $("#gem3").on("click", function() {
 	gem3 = gem3 + gemArray[3];
-	console.log(gem3);
+	// console.log(gem3);
 	$("#userGuess").text(gem0 + gem1 + gem2 + gem3);
 	if (compRandy < gem0+gem1+gem2+gem3) {
 	alert("You Lost");
